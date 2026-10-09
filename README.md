@@ -22,5 +22,5 @@ python train.py --stage vae                  # stage 1 only
 python train.py --stage downstream           # stage 2 only
 ```
 
-- Stage 1 (`train_vae`): train NMF-SVAE, checkpoint saved to `checkpoints/<dataset>/`.
+- Stage 1 (`train_vae`): train EmoVAE, checkpoint saved to `checkpoints/<dataset>/`.
 - Stage 2 (`train_downstream`): load the frozen backbone and train the classifier.
