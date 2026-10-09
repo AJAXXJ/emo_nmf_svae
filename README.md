@@ -1,4 +1,4 @@
-# EmoVAE (NMF-SVAE)
+# NMF-SVAE
 
 Multi-label emotion classification with an NMF-guided sparse VAE.
 
