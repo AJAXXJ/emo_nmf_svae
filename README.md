@@ -1,10 +1,5 @@
 # NMF-SVAE
 
-Multi-label emotion classification with an NMF-guided sparse VAE.
-
-BERT text encoder → emotion activity head → VAE with an NMF-initialized decoder →
-gated fusion of the latent `z` and BERT features for classification.
-
 Set the pretrained backbone path in `config.py` (`pretrained_model`).
 
 ## Data
@@ -27,5 +22,5 @@ python train.py --stage vae                  # stage 1 only
 python train.py --stage downstream           # stage 2 only
 ```
 
-- Stage 1 (`train_vae`): train EmoVAE, checkpoint saved to `checkpoints/<dataset>/`.
+- Stage 1 (`train_vae`): train NMF-SVAE, checkpoint saved to `checkpoints/<dataset>/`.
 - Stage 2 (`train_downstream`): load the frozen backbone and train the classifier.
